@@ -8,5 +8,4 @@ RUN pip install uv
 WORKDIR /opt/log-analyzer
 RUN uv sync
 
-# ENTRYPOINT ["/bin/sh"]
 CMD uv run src/cw-mcp-server/server.py 
